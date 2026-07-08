@@ -144,9 +144,26 @@ $ talks --list --sort=year
 
 ---
 
+### 🏙️ Contribution Skyline (3D)
+<sub>Auto-regenerated daily via <a href="https://github.com/Urvish-Kosta/Urvish-Kosta/blob/main/.github/workflows/profile-3d.yml">GitHub Actions</a> — an isometric read of the same calendar above.</sub>
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/Urvish-Kosta/Urvish-Kosta/main/profile-3d-contrib/profile-night-green.svg" alt="3D contribution skyline" width="700" />
+</div>
+
+---
+
 ### 🌐 Languages
 🇩🇪 German (A1, actively improving) &nbsp;·&nbsp; 🇬🇧 English (B2–C1) &nbsp;·&nbsp; 🇮🇳 Hindi (Native)
 
 <div align="center">
+
 <sub>Open to embedded systems, FPGA/SoC, and hardware security research & industry collaboration.</sub>
+
+<br/><br/>
+
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=110x110&bgcolor=0d1117&color=58a6ff&data=https://linkedin.com/in/urvishkosta" alt="QR code linking to LinkedIn" width="90" />
+<br/>
+<sub>scan → linkedin.com/in/urvishkosta</sub>
+
 </div>
