@@ -2,6 +2,12 @@
 
 <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=2EA0FF&center=true&vCenter=true&width=650&lines=Hi+there%2C+I'm+Urvish+Kosta+%F0%9F%91%8B;Embedded+Systems+%26+Digital+Design+Engineer;FPGA+%2F+SoC+Development;Hardware+Security+%26+Side-Channel+Analysis;Applied+ML+for+Hardware+Data" alt="Typing SVG" />
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Urvish-Kosta/Urvish-Kosta/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Urvish-Kosta/Urvish-Kosta/output/github-contribution-grid-snake.svg" />
+  <img alt="github contribution snake animation" src="https://raw.githubusercontent.com/Urvish-Kosta/Urvish-Kosta/output/github-contribution-grid-snake.svg" width="100%" />
+</picture>
+
 ### Embedded Systems Engineer · FPGA/SoC Development · Hardware Security & Applied ML
 📍 Chemnitz, Germany &nbsp;|&nbsp; 🎓 M.Sc. Design & Test for Integrated Circuits @ TU Chemnitz
 
