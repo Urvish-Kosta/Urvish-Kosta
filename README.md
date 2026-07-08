@@ -24,27 +24,22 @@ Currently pursuing an **M.Sc. in Design and Test for Integrated Circuits** at TU
 
 ### 🔭 Experience Snapshot
 
-<table>
-<tr><th>Period</th><th>Role</th><th>Org</th><th>Focus</th></tr>
-<tr><td>2023–25</td><td><b>Research Scientist</b></td><td>DRDO</td><td>AES-128 side-channel key recovery, ML-based cryptanalysis</td></tr>
-<tr><td>2022–23</td><td><b>Hardware Design Engineer</b></td><td>AMD (Xilinx)</td><td>PCIe/AXI4 IP, Zynq UltraScale+, AI Engine bring-up</td></tr>
-<tr><td>2020–21</td><td><b>Development Engineer</b> (Co-op)</td><td>Atreyo R&D</td><td>LoRa IIoT telemetry, embedded Linux, anomaly detection</td></tr>
-</table>
+```c
+/* EXPERIENCE_REGMAP.h — memory-mapped career history           */
+/* OFFSET   REGISTER                  RESET_VALUE      PERIOD    */
 
-<details>
-<summary><b>Full role details</b></summary>
-<br/>
+0x00      RESEARCH_SCIENTIST         DRDO              [2023-2025]
+          └─ AES-128 side-channel key recovery · trace pipelines
+             (Python/MATLAB) · SVM→CNN cryptanalysis · adversarial ML
 
-**Research Scientist**, DRDO (10/2023 – 12/2025)
-Side-channel analysis of AES-128 across FPGA/microcontroller targets; built full trace-processing pipelines (Python/MATLAB); benchmarked SVM → CNN key-recovery models; adversarial robustness research.
+0x04      HW_DESIGN_ENGINEER         AMD_XILINX        [2022-2023]
+          └─ PCIe/AXI4/DDR IP · Zynq UltraScale+ MPSoC · SystemVerilog
+             RTL · AI Engine bring-up on Versal (VCK190)
 
-**Hardware Design Engineer (AIE Group)**, AMD (Xilinx) (07/2022 – 05/2023)
-PCIe/AXI4/DDR IP integration on Zynq UltraScale+ MPSoC; SystemVerilog RTL for NAND-flash controllers; AI Engine bring-up on Versal (VCK190).
-
-**Development Engineer (Co-op)**, Atreyo R&D (01/2020 – 05/2021)
-LoRa-based industrial IIoT telemetry systems; embedded Linux + on-device anomaly detection.
-
-</details>
+0x08      DEV_ENGINEER_COOP          ATREYO_RD         [2020-2021]
+          └─ LoRa IIoT telemetry · embedded Linux · on-device
+             anomaly detection (autoencoders, isolation forests)
+```
 
 ---
 
@@ -101,13 +96,35 @@ LoRa-based industrial IIoT telemetry systems; embedded Linux + on-device anomaly
 
 ### 📄 Publications & Talks
 
-<table>
-<tr><th></th><th>Title</th><th>Venue</th><th>Year</th></tr>
-<tr><td>📄</td><td>Fruit Classification Detection: A Low-Cost Model for Identifying Age and Quality of Specific Fruit Types</td><td>Proc. ICCET</td><td>2023</td></tr>
-<tr><td>📄</td><td>Side-Channel Analysis of Raspberry Pi 4 against AES-128 Implementation and Key Recovery</td><td>DRDO (internal)</td><td>2025</td></tr>
-<tr><td>🎤</td><td>Advancements in AI Accelerators: Semiconductors in ML, Edge Computing & Nanoelectronics <i>(Guest Lecturer)</i></td><td>IEEE, IIT Delhi</td><td>2024</td></tr>
-<tr><td>🎤</td><td>FPGA Design for Cryptography and Security <i>(SME Speaker)</i></td><td>DRDO, Metcalf House</td><td>2024</td></tr>
-</table>
+```bibtex
+@inproceedings{kosta2023fruit,
+  author    = {Kosta, U. and Parmar, S.},
+  title     = {Fruit Classification Detection: A Low-Cost Model for
+               Identifying Age and Quality of Specific Fruit Types},
+  booktitle = {Proc. ICCET},
+  year      = {2023}
+}
+
+@techreport{kosta2025sidechannel,
+  author      = {Kosta, U.},
+  title       = {Side-Channel Analysis of Raspberry Pi 4 against
+                 AES-128 Implementation and Key Recovery},
+  institution = {DRDO},
+  year        = {2025},
+  note        = {Internal publication}
+}
+```
+
+```text
+$ talks --list --sort=year
+
+[2024] IEEE Conference, IIT Delhi ............... Guest Lecturer
+       "Advancements in AI Accelerators: Semiconductors in ML,
+        Edge Computing & Nanoelectronics"
+
+[2024] DRDO, Metcalf House ....................... SME Speaker
+       "FPGA Design for Cryptography and Security"
+```
 
 ---
 
