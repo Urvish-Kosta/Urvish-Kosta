@@ -31,6 +31,10 @@
 
 <sub>Source: <a href="https://github.com/Urvish-Kosta/Urvish-Kosta/blob/main/scripts/circuit_bloom.py">scripts/circuit_bloom.py</a></sub>
 
+<div align="center">
+<img src="https://raw.githubusercontent.com/Urvish-Kosta/Urvish-Kosta/main/assets/hacker-pun.svg" alt="hardware pun of the day, rotates daily" width="700" />
+</div>
+
 ---
 
 ### 🧰 Tech Stack
@@ -108,5 +112,9 @@
 <img src="https://api.qrserver.com/v1/create-qr-code/?size=110x110&bgcolor=0d1117&color=58a6ff&data=https://linkedin.com/in/urvishkosta" alt="QR code linking to LinkedIn" width="90" />
 <br/>
 <sub>scan → linkedin.com/in/urvishkosta</sub>
+
+<br/><br/>
+
+<img src="https://komarev.com/ghpvc/?username=Urvish-Kosta&label=visitors&color=58a6ff&style=flat-square" alt="visitor counter" />
 
 </div>
