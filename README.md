@@ -14,78 +14,35 @@
 
 ---
 
-### 👨‍💻 About Me
-
-I'm an Embedded Systems and Electronics Engineer with four years of experience across **hardware-software integration, RTL/SoC design, and applied machine learning**. My work sits at the intersection of semiconductor technologies, intelligent systems, and hardware security — from recovering cryptographic keys via side-channel analysis to bringing up AI-accelerator IP on Xilinx/AMD silicon.
-
-Currently pursuing an **M.Sc. in Design and Test for Integrated Circuits** at TU Chemnitz, focused on digital and mixed-signal IC design and semiconductor test.
-
----
-
-### 📌 Key Achievements
-
-<table>
-<tr>
-<td align="center" width="25%">
-
-**4+**
-years of hardware &<br/>embedded engineering
-
-</td>
-<td align="center" width="25%">
-
-**AES-128**
-key fully recovered via<br/>side-channel analysis
-
-</td>
-<td align="center" width="25%">
-
-**1,000+**
-concurrent ops on a<br/>custom RTOS scheduler
-
-</td>
-<td align="center" width="25%">
-
-**35%**
-telemetry efficiency gain<br/>on IIoT gateways
-
-</td>
-</tr>
-</table>
-
----
-
-### 🔭 Experience Snapshot
+### 🧬 whoami
 
 ```
-$ git log --oneline --graph --decorate
-
-*  f4a9c21  (HEAD -> main)  M.Sc. Design & Test for ICs — TU Chemnitz  [2026–]
-*
-*  e91d7a4  (tag: drdo)  Research Scientist — DRDO  [2023–2025]
-|     AES-128 side-channel key recovery · trace pipelines (Python/MATLAB)
-|     SVM → CNN cryptanalysis · adversarial ML research
-*
-*  c3b58f0  (tag: amd-xilinx)  Hardware Design Engineer — AMD (Xilinx)  [2022–2023]
-|     PCIe/AXI4/DDR IP · Zynq UltraScale+ MPSoC · SystemVerilog RTL
-|     AI Engine bring-up on Versal (VCK190)
-*
-*  7d2e19a  (tag: atreyo)  Development Engineer, Co-op — Atreyo R&D  [2020–2021]
-|     LoRa IIoT telemetry · embedded Linux · on-device anomaly detection
-*
-*  1a0f3c8  (tag: education)  B.Tech Electronics & Communication — GTU  [2016–2020]
+                    urvish@chemnitz.dev
+    ┌──────────────┐   ─────────────────────────────────────────
+    │  ┌────────┐  │   OS: ChemnitzOS 26.04 (Debian-adjacent, Gujarat-flavored)
+    │  │ U    K │  │   Kernel: Curiosity 5.9.2-stable
+  ──┼──┤        ├──┼──   Shell: bash & solder fumes
+    │  └────────┘  │   Editor: VS Code — 47 extensions installed, 3 in active use
+    └──┬──┬──┬──┬──┘   Font: Fira Code, ligatures ON, no regrets
+       │  │  │  │      Uptime since last coffee: 00:42:13
+                       Currently compiling: a really good excuse
+                       Currently debugging: life, mostly
+                       Favorite bug: off-by-one. always has been.
+                       CPU temp: critical (it's deadline week)
+                       Resolution: whatever the oscilloscope says
+                       Locale: en_IN / de_DE (A1, sorry) / hi_IN
 ```
 
 ---
 
-### 🚀 Featured Work
-*(repos being migrated and documented — check back soon 🚧)*
+### 🌱 circuit-bloom.py
+<sub>A tiny generative-art script I wrote for fun — a radially-symmetric "hex L-system" (the same recursive branching logic you'd use to lay out PCB fan-out traces, aimed somewhere pointless instead of somewhere useful). Reseeded and regenerated automatically every day via <a href="https://github.com/Urvish-Kosta/Urvish-Kosta/blob/main/.github/workflows/circuit-bloom.yml">GitHub Actions</a> — refresh this page tomorrow and it'll have grown differently.</sub>
 
-| Project | Stack | Highlight |
-|---|---|---|
-| **ARM Cortex-M0 Softcore on FPGA** | Spartan-6, RTOS, MATLAB | RTOS scheduler handling 1,000+ concurrent operations |
-| **Smart Blind Stick** | Raspberry Pi 4, TensorFlow, CLIP/ViLT | Real-time scene captioning + VQA for assistive navigation |
-| **IIoT Data-Acquisition Gateways** | LoRa, Cadence Allegro, Arduino Mega | 35% improvement in end-to-end telemetry efficiency |
+<div align="center">
+<img src="https://raw.githubusercontent.com/Urvish-Kosta/Urvish-Kosta/main/assets/circuit-bloom.svg" alt="procedurally generated circuit-bloom art, regenerated daily" width="520" />
+</div>
+
+<sub>Source: <a href="https://github.com/Urvish-Kosta/Urvish-Kosta/blob/main/scripts/circuit_bloom.py">scripts/circuit_bloom.py</a></sub>
 
 ---
 
@@ -126,40 +83,6 @@ $ git log --oneline --graph --decorate
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
-
----
-
-### 📄 Publications & Talks
-
-```bibtex
-@inproceedings{kosta2023fruit,
-  author    = {Kosta, U. and Parmar, S.},
-  title     = {Fruit Classification Detection: A Low-Cost Model for
-               Identifying Age and Quality of Specific Fruit Types},
-  booktitle = {Proc. ICCET},
-  year      = {2023}
-}
-
-@techreport{kosta2025sidechannel,
-  author      = {Kosta, U.},
-  title       = {Side-Channel Analysis of Raspberry Pi 4 against
-                 AES-128 Implementation and Key Recovery},
-  institution = {DRDO},
-  year        = {2025},
-  note        = {Internal publication}
-}
-```
-
-```text
-$ talks --list --sort=year
-
-[2024] IEEE Conference, IIT Delhi ............... Guest Lecturer
-       "Advancements in AI Accelerators: Semiconductors in ML,
-        Edge Computing & Nanoelectronics"
-
-[2024] DRDO, Metcalf House ....................... SME Speaker
-       "FPGA Design for Cryptography and Security"
-```
 
 ---
 
