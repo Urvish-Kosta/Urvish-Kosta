@@ -24,21 +24,23 @@ Currently pursuing an **M.Sc. in Design and Test for Integrated Circuits** at TU
 
 ### 🔭 Experience Snapshot
 
-```c
-/* EXPERIENCE_REGMAP.h — memory-mapped career history           */
-/* OFFSET   REGISTER                  RESET_VALUE      PERIOD    */
+```
+$ git log --oneline --graph --decorate
 
-0x00      RESEARCH_SCIENTIST         DRDO              [2023-2025]
-          └─ AES-128 side-channel key recovery · trace pipelines
-             (Python/MATLAB) · SVM→CNN cryptanalysis · adversarial ML
-
-0x04      HW_DESIGN_ENGINEER         AMD_XILINX        [2022-2023]
-          └─ PCIe/AXI4/DDR IP · Zynq UltraScale+ MPSoC · SystemVerilog
-             RTL · AI Engine bring-up on Versal (VCK190)
-
-0x08      DEV_ENGINEER_COOP          ATREYO_RD         [2020-2021]
-          └─ LoRa IIoT telemetry · embedded Linux · on-device
-             anomaly detection (autoencoders, isolation forests)
+*  f4a9c21  (HEAD -> main)  M.Sc. Design & Test for ICs — TU Chemnitz  [2026–]
+*
+*  e91d7a4  (tag: drdo)  Research Scientist — DRDO  [2023–2025]
+|     AES-128 side-channel key recovery · trace pipelines (Python/MATLAB)
+|     SVM → CNN cryptanalysis · adversarial ML research
+*
+*  c3b58f0  (tag: amd-xilinx)  Hardware Design Engineer — AMD (Xilinx)  [2022–2023]
+|     PCIe/AXI4/DDR IP · Zynq UltraScale+ MPSoC · SystemVerilog RTL
+|     AI Engine bring-up on Versal (VCK190)
+*
+*  7d2e19a  (tag: atreyo)  Development Engineer, Co-op — Atreyo R&D  [2020–2021]
+|     LoRa IIoT telemetry · embedded Linux · on-device anomaly detection
+*
+*  1a0f3c8  (tag: education)  B.Tech Electronics & Communication — GTU  [2016–2020]
 ```
 
 ---
