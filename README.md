@@ -22,6 +22,39 @@ Currently pursuing an **M.Sc. in Design and Test for Integrated Circuits** at TU
 
 ---
 
+### 📌 Key Achievements
+
+<table>
+<tr>
+<td align="center" width="25%">
+
+**4+**
+years of hardware &<br/>embedded engineering
+
+</td>
+<td align="center" width="25%">
+
+**AES-128**
+key fully recovered via<br/>side-channel analysis
+
+</td>
+<td align="center" width="25%">
+
+**1,000+**
+concurrent ops on a<br/>custom RTOS scheduler
+
+</td>
+<td align="center" width="25%">
+
+**35%**
+telemetry efficiency gain<br/>on IIoT gateways
+
+</td>
+</tr>
+</table>
+
+---
+
 ### 🔭 Experience Snapshot
 
 ```
