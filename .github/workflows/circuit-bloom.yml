@@ -1,0 +1,35 @@
+name: regenerate circuit-bloom art
+
+on:
+  schedule:
+    - cron: "0 4 * * *"  # once a day, 04:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: generate today's circuit-bloom.svg
+        run: python3 scripts/circuit_bloom.py
+
+      - name: commit & push if changed
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add assets/circuit-bloom.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: regenerate circuit-bloom art for $(date -u +%Y-%m-%d)"
+            git push
+          else
+            echo "no visual change today, skipping commit"
+          fi
