@@ -24,9 +24,27 @@ Currently pursuing an **M.Sc. in Design and Test for Integrated Circuits** at TU
 
 ### 🔭 Experience Snapshot
 
-- **Research Scientist**, DRDO (10/2023 – 12/2025) — Side-channel analysis of AES-128 across FPGA/microcontroller targets; built full trace-processing pipelines (Python/MATLAB); benchmarked SVM → CNN key-recovery models; adversarial robustness research.
-- **Hardware Design Engineer (AIE Group)**, AMD (Xilinx) (07/2022 – 05/2023) — PCIe/AXI4/DDR IP integration on Zynq UltraScale+ MPSoC; SystemVerilog RTL for NAND-flash controllers; AI Engine bring-up on Versal (VCK190).
-- **Development Engineer (Co-op)**, Atreyo R&D (01/2020 – 05/2021) — LoRa-based industrial IIoT telemetry systems; embedded Linux + on-device anomaly detection.
+<table>
+<tr><th>Period</th><th>Role</th><th>Org</th><th>Focus</th></tr>
+<tr><td>2023–25</td><td><b>Research Scientist</b></td><td>DRDO</td><td>AES-128 side-channel key recovery, ML-based cryptanalysis</td></tr>
+<tr><td>2022–23</td><td><b>Hardware Design Engineer</b></td><td>AMD (Xilinx)</td><td>PCIe/AXI4 IP, Zynq UltraScale+, AI Engine bring-up</td></tr>
+<tr><td>2020–21</td><td><b>Development Engineer</b> (Co-op)</td><td>Atreyo R&D</td><td>LoRa IIoT telemetry, embedded Linux, anomaly detection</td></tr>
+</table>
+
+<details>
+<summary><b>Full role details</b></summary>
+<br/>
+
+**Research Scientist**, DRDO (10/2023 – 12/2025)
+Side-channel analysis of AES-128 across FPGA/microcontroller targets; built full trace-processing pipelines (Python/MATLAB); benchmarked SVM → CNN key-recovery models; adversarial robustness research.
+
+**Hardware Design Engineer (AIE Group)**, AMD (Xilinx) (07/2022 – 05/2023)
+PCIe/AXI4/DDR IP integration on Zynq UltraScale+ MPSoC; SystemVerilog RTL for NAND-flash controllers; AI Engine bring-up on Versal (VCK190).
+
+**Development Engineer (Co-op)**, Atreyo R&D (01/2020 – 05/2021)
+LoRa-based industrial IIoT telemetry systems; embedded Linux + on-device anomaly detection.
+
+</details>
 
 ---
 
@@ -83,10 +101,13 @@ Currently pursuing an **M.Sc. in Design and Test for Integrated Circuits** at TU
 
 ### 📄 Publications & Talks
 
-- U. Kosta and S. Parmar, *"Fruit Classification Detection: A Low-Cost Model for Identifying Age and Quality of Specific Fruit Types,"* Proc. ICCET, 2023.
-- U. Kosta, *"Side-Channel Analysis of Raspberry Pi 4 against AES-128 Implementation and Key Recovery,"* DRDO (internal publication), 2025.
-- 🎤 Guest Lecturer, IEEE Conference, IIT Delhi (2024) — *Advancements in AI Accelerators: Semiconductors in ML, Edge Computing & Nanoelectronics*
-- 🎤 SME Speaker, DRDO, Metcalf House (2024) — *FPGA Design for Cryptography and Security*
+<table>
+<tr><th></th><th>Title</th><th>Venue</th><th>Year</th></tr>
+<tr><td>📄</td><td>Fruit Classification Detection: A Low-Cost Model for Identifying Age and Quality of Specific Fruit Types</td><td>Proc. ICCET</td><td>2023</td></tr>
+<tr><td>📄</td><td>Side-Channel Analysis of Raspberry Pi 4 against AES-128 Implementation and Key Recovery</td><td>DRDO (internal)</td><td>2025</td></tr>
+<tr><td>🎤</td><td>Advancements in AI Accelerators: Semiconductors in ML, Edge Computing & Nanoelectronics <i>(Guest Lecturer)</i></td><td>IEEE, IIT Delhi</td><td>2024</td></tr>
+<tr><td>🎤</td><td>FPGA Design for Cryptography and Security <i>(SME Speaker)</i></td><td>DRDO, Metcalf House</td><td>2024</td></tr>
+</table>
 
 ---
 
