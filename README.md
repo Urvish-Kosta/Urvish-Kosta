@@ -91,7 +91,6 @@ Currently pursuing an **M.Sc. in Design and Test for Integrated Circuits** at TU
 ### 📊 GitHub Stats
 
 <div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=Urvish-Kosta&show_icons=true&theme=default&hide_border=true" height="165" alt="GitHub stats" />
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=Urvish-Kosta&hide_border=true" height="165" alt="GitHub streak" />
 </div>
 
