@@ -1,0 +1,78 @@
+<svg viewBox="0 0 900 360" width="900" height="360" xmlns="http://www.w3.org/2000/svg" font-family="'Fira Code',monospace">
+<defs>
+<pattern id="g3" width="22" height="22" patternUnits="userSpaceOnUse">
+<path d="M 22 0 L 0 0 0 22" fill="none" stroke="#30363d" stroke-width="0.4" opacity="0.3"/>
+</pattern>
+</defs>
+<rect x="0" y="0" width="900" height="360" fill="#0d1117"/>
+<rect x="0" y="0" width="900" height="360" fill="url(#g3)"/>
+<line x1="150.0" y1="117.0" x2="150.0" y2="95.0" stroke="#3fb950" stroke-width="1.6" opacity="0.75" stroke-linecap="round"/>
+<circle cx="150.0" cy="95.0" r="2" fill="#3fb950" opacity="0.8"/>
+<line x1="200.2" y1="146.0" x2="219.3" y2="135.0" stroke="#d29922" stroke-width="1.6" opacity="0.75" stroke-linecap="round"/>
+<circle cx="219.3" cy="135.0" r="2" fill="#d29922" opacity="0.8"/>
+<line x1="200.2" y1="204.0" x2="219.3" y2="215.0" stroke="#46c2b0" stroke-width="1.6" opacity="0.75" stroke-linecap="round"/>
+<circle cx="219.3" cy="215.0" r="2" fill="#46c2b0" opacity="0.8"/>
+<line x1="150.0" y1="233.0" x2="150.0" y2="255.0" stroke="#58a6ff" stroke-width="1.6" opacity="0.75" stroke-linecap="round"/>
+<circle cx="150.0" cy="255.0" r="2" fill="#58a6ff" opacity="0.8"/>
+<line x1="99.8" y1="204.0" x2="80.7" y2="215.0" stroke="#bc8cff" stroke-width="1.6" opacity="0.75" stroke-linecap="round"/>
+<circle cx="80.7" cy="215.0" r="2" fill="#bc8cff" opacity="0.8"/>
+<line x1="99.8" y1="146.0" x2="80.7" y2="135.0" stroke="#f78166" stroke-width="1.6" opacity="0.75" stroke-linecap="round"/>
+<circle cx="80.7" cy="135.0" r="2" fill="#f78166" opacity="0.8"/>
+<circle r="2" fill="#3fb950"><animateMotion dur="2.40s" repeatCount="indefinite" path="M150.0,117.0 L150.0,95.0"/></circle>
+<circle r="2" fill="#d29922"><animateMotion dur="2.75s" repeatCount="indefinite" path="M200.2,146.0 L219.3,135.0"/></circle>
+<circle r="2" fill="#46c2b0"><animateMotion dur="3.10s" repeatCount="indefinite" path="M200.2,204.0 L219.3,215.0"/></circle>
+<circle r="2" fill="#58a6ff"><animateMotion dur="3.45s" repeatCount="indefinite" path="M150.0,233.0 L150.0,255.0"/></circle>
+<circle r="2" fill="#bc8cff"><animateMotion dur="3.80s" repeatCount="indefinite" path="M99.8,204.0 L80.7,215.0"/></circle>
+<circle r="2" fill="#f78166"><animateMotion dur="4.15s" repeatCount="indefinite" path="M99.8,146.0 L80.7,135.0"/></circle>
+<circle cx="150" cy="175" r="55" fill="#161b22" stroke="#58a6ff" stroke-width="2.5"/>
+<circle cx="150" cy="175" r="47" fill="none" stroke="#30363d" stroke-width="1"/>
+<text x="150" y="177" text-anchor="middle" font-size="24" font-weight="bold" fill="#58a6ff" letter-spacing="1">UK</text>
+<text x="150" y="195" text-anchor="middle" font-size="9" fill="#6e7681" letter-spacing="2">HUMAN_CORE</text>
+<circle cx="150.0" cy="73.0" r="20" fill="#161b22" stroke="#3fb950" stroke-width="1.4"/>
+<g transform="translate(150.0,73.0)"><path d="M-10,9 L-1,-8 L4,-1 L10,9 Z" fill="#3fb950" opacity="0.85"/>
+<path d="M-3,9 L1,1 L10,9 Z" fill="#3fb950" opacity="0.55"/>
+<circle cx="-1" cy="-8" r="1.4" fill="#f2cc60"/></g>
+<text x="150.0" y="47.0" text-anchor="middle" font-size="10" fill="#3fb950" letter-spacing="1">HIKING</text>
+<circle cx="238.3" cy="124.0" r="20" fill="#161b22" stroke="#d29922" stroke-width="1.4"/>
+<g transform="translate(238.3,124.0)"><circle cx="0" cy="0" r="9" fill="none" stroke="#d29922" stroke-width="1.6"/>
+<line x1="0" y1="-9" x2="0" y2="9" stroke="#d29922" stroke-width="1.3"/>
+<path d="M-9,0 Q0,-6 9,0" fill="none" stroke="#d29922" stroke-width="1.3"/>
+<path d="M-9,0 Q0,6 9,0" fill="none" stroke="#d29922" stroke-width="1.3"/></g>
+<text x="238.3" y="158.0" text-anchor="middle" font-size="10" fill="#d29922" letter-spacing="1">BASKETBALL</text>
+<circle cx="238.3" cy="226.0" r="20" fill="#161b22" stroke="#46c2b0" stroke-width="1.4"/>
+<g transform="translate(238.3,226.0)"><circle cx="-7" cy="5" r="6" fill="none" stroke="#46c2b0" stroke-width="1.6"/>
+<circle cx="7" cy="5" r="6" fill="none" stroke="#46c2b0" stroke-width="1.6"/>
+<path d="M-7,5 L-1,-6 L7,5 M-1,-6 L-5,-8" fill="none" stroke="#46c2b0" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></g>
+<text x="238.3" y="260.0" text-anchor="middle" font-size="10" fill="#46c2b0" letter-spacing="1">CYCLING</text>
+<circle cx="150.0" cy="277.0" r="20" fill="#161b22" stroke="#58a6ff" stroke-width="1.4"/>
+<g transform="translate(150.0,277.0)"><rect x="-14" y="-8" width="28" height="16" rx="8" fill="none" stroke="#58a6ff" stroke-width="1.6"/>
+<line x1="-9" y1="-3" x2="-9" y2="3" stroke="#58a6ff" stroke-width="1.4"/>
+<line x1="-12" y1="0" x2="-6" y2="0" stroke="#58a6ff" stroke-width="1.4"/>
+<circle cx="6" cy="-2" r="1.7" fill="#58a6ff"/>
+<circle cx="10" cy="2" r="1.7" fill="#58a6ff"/></g>
+<text x="150.0" y="303.0" text-anchor="middle" font-size="10" fill="#58a6ff" letter-spacing="1">GAMING</text>
+<circle cx="61.7" cy="226.0" r="20" fill="#161b22" stroke="#bc8cff" stroke-width="1.4"/>
+<g transform="translate(61.7,226.0)"><ellipse cx="0" cy="0" rx="11" ry="8" fill="none" stroke="#bc8cff" stroke-width="1.6"/>
+<circle cx="4" cy="4" r="2.2" fill="none" stroke="#bc8cff" stroke-width="1"/>
+<circle cx="-4" cy="-2" r="1.5" fill="#3fb950"/>
+<circle cx="1" cy="-4" r="1.5" fill="#d29922"/>
+<circle cx="-3" cy="2" r="1.5" fill="#58a6ff"/></g>
+<text x="35.1" y="239.0" text-anchor="end" font-size="10" fill="#bc8cff" letter-spacing="1">ART</text>
+<circle cx="61.7" cy="124.0" r="20" fill="#161b22" stroke="#f78166" stroke-width="1.4"/>
+<g transform="translate(61.7,124.0)"><path d="M0,-10 C5,-10 8,-6.5 8,-2.5 C8,3 0,10 0,10 C0,10 -8,3 -8,-2.5 C-8,-6.5 -5,-10 0,-10 Z" fill="none" stroke="#f78166" stroke-width="1.6"/>
+<circle cx="0" cy="-2.5" r="2.6" fill="#0d1117" stroke="#f78166" stroke-width="1.2"/></g>
+<text x="35.1" y="111.0" text-anchor="end" font-size="10" fill="#f78166" letter-spacing="1">TRAVEL</text>
+<text x="300" y="55" font-size="11" fill="#58a6ff" letter-spacing="2">WHO</text>
+<text x="300" y="79" font-size="16" fill="#c9d1d9">Engineer by profession. Restless by default —</text>
+<text x="300" y="101" font-size="16" fill="#c9d1d9">always chasing whatever's next.</text>
+<text x="300" y="135" font-size="11" fill="#d29922" letter-spacing="2">PLAYING NOW</text>
+<text x="300" y="159" font-size="16" fill="#c9d1d9">Valorant — currently grinding rank,</text>
+<text x="300" y="181" font-size="16" fill="#c9d1d9">refusing to touch grass.</text>
+<text x="300" y="215" font-size="11" fill="#f78166" letter-spacing="2">NEXT UP</text>
+<text x="300" y="239" font-size="16" fill="#c9d1d9">Backpacking across Europe.</text>
+<text x="300" y="261" font-size="16" fill="#c9d1d9">One country, one weekend at a time.</text>
+<text x="300" y="295" font-size="11" fill="#3fb950" letter-spacing="2">OFF THE CLOCK</text>
+<text x="300" y="319" font-size="16" fill="#c9d1d9">Hiking · basketball · cycling ·</text>
+<text x="300" y="341" font-size="16" fill="#c9d1d9">sketching whatever's in front of me.</text>
+<text x="886" y="350" text-anchor="end" font-size="9" fill="#484f58" letter-spacing="1">// whoami.svg — handcrafted, not templated</text>
+</svg>
