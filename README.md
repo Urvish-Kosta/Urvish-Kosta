@@ -1,12 +1,8 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=2EA0FF&center=true&vCenter=true&width=650&lines=Hi+there%2C+I'm+Urvish+Kosta+%F0%9F%91%8B;Embedded+Systems+%26+Digital+Design+Engineer;FPGA+%2F+SoC+Development;Hardware+Security+%26+Side-Channel+Analysis;Applied+ML+for+Hardware+Data" alt="Typing SVG" />
+<img src="https://raw.githubusercontent.com/Urvish-Kosta/Urvish-Kosta/main/assets/chip-header.svg" alt="Urvish Kosta — SoC block diagram header" width="900" />
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Urvish-Kosta/Urvish-Kosta/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Urvish-Kosta/Urvish-Kosta/output/github-contribution-grid-snake.svg" />
-  <img alt="github contribution snake animation" src="https://raw.githubusercontent.com/Urvish-Kosta/Urvish-Kosta/output/github-contribution-grid-snake.svg" width="100%" />
-</picture>
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&pause=1200&color=8B949E&center=true&vCenter=true&width=650&lines=embedded+systems+%2F%2F+fpga+%2F%2F+hardware+security+%2F%2F+applied+ml" alt="Typing SVG" />
 
 ### Embedded Systems Engineer · FPGA/SoC Development · Hardware Security & Applied ML
 📍 Chemnitz, Germany &nbsp;|&nbsp; 🎓 M.Sc. Design & Test for Integrated Circuits @ TU Chemnitz
@@ -97,7 +93,13 @@ Currently pursuing an **M.Sc. in Design and Test for Integrated Circuits** at TU
 ### 📊 GitHub Stats
 
 <div align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Urvish-Kosta&hide_border=true" height="165" alt="GitHub streak" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Urvish-Kosta&hide_border=true" height="165" alt="GitHub streak" /><br/><br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Urvish-Kosta/Urvish-Kosta/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Urvish-Kosta/Urvish-Kosta/output/github-contribution-grid-snake.svg" />
+  <img alt="github contribution snake animation" src="https://raw.githubusercontent.com/Urvish-Kosta/Urvish-Kosta/output/github-contribution-grid-snake.svg" width="700" />
+</picture>
 </div>
 
 ---
