@@ -14,24 +14,11 @@
 
 ---
 
-### 🧬 whoami
+### 🧬 who am i
 
-```
-                    urvish@chemnitz.dev
-    ┌──────────────┐   ─────────────────────────────────────────
-    │  ┌────────┐  │   OS: ChemnitzOS 26.04 (Debian-adjacent, Gujarat-flavored)
-    │  │ U    K │  │   Kernel: Curiosity 5.9.2-stable
-  ──┼──┤        ├──┼──   Shell: bash & solder fumes
-    │  └────────┘  │   Editor: VS Code — 47 extensions installed, 3 in active use
-    └──┬──┬──┬──┬──┘   Font: Fira Code, ligatures ON, no regrets
-       │  │  │  │      Uptime since last coffee: 00:42:13
-                       Currently compiling: a really good excuse
-                       Currently debugging: life, mostly
-                       Favorite bug: off-by-one. always has been.
-                       CPU temp: critical (it's deadline week)
-                       Resolution: whatever the oscilloscope says
-                       Locale: en_IN / de_DE (A1, sorry) / hi_IN
-```
+<div align="center">
+<img src="https://raw.githubusercontent.com/Urvish-Kosta/Urvish-Kosta/main/assets/whoami.svg" alt="who am i — identity card with hobbies and current interests" width="900" />
+</div>
 
 ---
 
