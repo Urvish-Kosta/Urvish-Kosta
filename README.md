@@ -80,7 +80,7 @@
 ### 📊 GitHub Stats
 
 <div align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Urvish-Kosta&hide_border=true" height="165" alt="GitHub streak" /><br/><br/>
+<img src="https://raw.githubusercontent.com/Urvish-Kosta/Urvish-Kosta/main/assets/github-stats.svg" alt="GitHub contribution stats" width="700" /><br/><br/>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Urvish-Kosta/Urvish-Kosta/output/github-contribution-grid-snake-dark.svg" />
