@@ -29,7 +29,11 @@ jobs:
           git add assets/circuit-bloom.svg
           if ! git diff --cached --quiet; then
             git commit -m "chore: regenerate circuit-bloom art for $(date -u +%Y-%m-%d)"
-            git push
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin main && git push && break
+              echo "push rejected (concurrent workflow?), retrying in 5s... ($i/5)"
+              sleep 5
+            done
           else
             echo "no visual change today, skipping commit"
           fi
