@@ -1,0 +1,41 @@
+name: regenerate GitHub stats card
+
+on:
+  schedule:
+    - cron: "30 4 * * *"  # once a day, 04:30 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: generate today's github-stats.svg
+        env:
+          GH_STATS_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
+        run: python3 scripts/github_stats.py
+
+      - name: commit & push if changed
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add assets/github-stats.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: regenerate GitHub stats card for $(date -u +%Y-%m-%d)"
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin main && git push && break
+              echo "push rejected (concurrent workflow?), retrying in 5s... ($i/5)"
+              sleep 5
+            done
+          else
+            echo "no stats change today, skipping commit"
+          fi
