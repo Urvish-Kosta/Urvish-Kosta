@@ -1,17 +1,37 @@
 #!/usr/bin/env python3
 """
-circuit-bloom.py
+circuit_bloom.py
 
-A tiny generative art script. Grows a radially-symmetric hex L-system
-that looks like PCB fan-out traces, colored on a blue->green->amber ramp.
-Seeded by the date, so the piece is different every day.
+Same generative hex L-system as scripts/circuit_bloom.py, plus a SMIL
+"energize" sweep: traces draw themselves outward from the centre die,
+depth by depth, then vias and tip-pads light up behind the wavefront.
+The whole thing loops on a fixed period so a visitor who lingers sees it
+more than once.
 
-No practical purpose whatsoever. That's the point.
+Technique: every <line> gets stroke-dasharray = its own length and an
+<animate> on stroke-dashoffset driven by values/keyTimes over one shared
+LOOP period. keyTimes hold the line hidden until its slot, draw it, then
+hold it lit until the loop restarts. One animate element per line, no JS.
+
+Usage:  python3 scripts/circuit_bloom.py [seed]
 """
 import math
 import random
 import sys
 import datetime
+
+# --- animation tuning -------------------------------------------------
+LOOP = 14.0        # seconds for one full cycle
+DEPTH_STEP = 0.45  # delay added per L-system depth
+DRAW = 0.85        # seconds a single trace takes to draw
+FADE = 0.5         # seconds for a via / pad to fade in
+# ----------------------------------------------------------------------
+
+
+def kt(t):
+    """clamp a time in seconds to a keyTimes fraction of the loop"""
+    return max(0.0, min(1.0, t / LOOP))
+
 
 def make_svg(seed):
     random.seed(seed)
@@ -53,6 +73,13 @@ def make_svg(seed):
         idx = min(int(d / maxd * (len(palette) - 1)), len(palette) - 1)
         return palette[idx]
 
+    # when the wavefront reaches each depth
+    def slot(depth):
+        start = 0.35 + depth * DEPTH_STEP
+        return start, start + DRAW
+
+    sweep_end = slot(max_depth)[1] + FADE
+
     p = []
     p.append(f'<svg viewBox="0 0 {W} {H}" width="{W}" height="{H}" xmlns="http://www.w3.org/2000/svg" font-family="\'Fira Code\',monospace">')
     p.append('<defs>')
@@ -66,45 +93,91 @@ def make_svg(seed):
     p.append('</defs>')
     p.append(f'<rect x="0" y="0" width="{W}" height="{H}" fill="#0d1117"/>')
     p.append(f'<rect x="0" y="0" width="{W}" height="{H}" fill="url(#g2)"/>')
-    p.append(f'<circle cx="{CX}" cy="{CY}" r="230" fill="url(#glow)"/>')
 
+    # centre glow pulses in sync with the sweep
+    p.append(f'<circle cx="{CX}" cy="{CY}" r="230" fill="url(#glow)" opacity="0.25">')
+    p.append(f'  <animate attributeName="opacity" dur="{LOOP}s" repeatCount="indefinite" '
+             f'values="0.15;0.55;0.3;0.3;0.15" '
+             f'keyTimes="0;{kt(0.5):.4f};{kt(sweep_end):.4f};{kt(LOOP-1.2):.4f};1"/>')
+    p.append('</circle>')
+
+    # --- traces: draw-on via stroke-dashoffset ---
     for (x1, y1, x2, y2, d) in lines:
         c = color_for_depth(d, max_depth)
         w = max(0.6, 2.6 - d * 0.35)
         op = max(0.35, 1 - d * 0.10)
-        p.append(f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" stroke="{c}" stroke-width="{w:.2f}" opacity="{op:.2f}" stroke-linecap="round"/>')
+        L = math.hypot(x2 - x1, y2 - y1)
+        t0, t1 = slot(d)
+        t0 += random.uniform(-0.06, 0.06)   # slight jitter so it isn't a rigid ring
+        t1 += random.uniform(-0.06, 0.06)
+        p.append(
+            f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" '
+            f'stroke="{c}" stroke-width="{w:.2f}" opacity="{op:.2f}" stroke-linecap="round" '
+            f'stroke-dasharray="{L:.2f}" stroke-dashoffset="{L:.2f}">'
+        )
+        p.append(
+            f'  <animate attributeName="stroke-dashoffset" dur="{LOOP}s" repeatCount="indefinite" '
+            f'values="{L:.2f};{L:.2f};0;0" '
+            f'keyTimes="0;{kt(t0):.4f};{kt(t1):.4f};1" '
+            f'calcMode="spline" keySplines="0 0 1 1;.25 .1 .25 1;0 0 1 1"/>'
+        )
+        p.append('</line>')
 
+    # --- vias: fade in just behind the wavefront ---
     for (x, y, d) in vias:
         c = color_for_depth(d, max_depth)
         r = max(1.0, 2.6 - d * 0.3)
-        p.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r:.2f}" fill="{c}" opacity="0.85"/>')
+        t1 = slot(d)[1]
+        p.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r:.2f}" fill="{c}" opacity="0">')
+        p.append(
+            f'  <animate attributeName="opacity" dur="{LOOP}s" repeatCount="indefinite" '
+            f'values="0;0;0.85;0.85" keyTimes="0;{kt(t1):.4f};{kt(t1+FADE):.4f};1"/>'
+        )
+        p.append('</circle>')
 
+    # --- tip pads: fade in last, then breathe ---
     tips = [(x2, y2) for (x1, y1, x2, y2, d) in lines if d == max_depth]
+    t_tip = slot(max_depth)[1]
     for (x, y) in tips:
-        p.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3" fill="none" stroke="#d29922" stroke-width="1" opacity="0.6"/>')
+        p.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3" fill="none" stroke="#d29922" stroke-width="1" opacity="0">')
+        p.append(
+            f'  <animate attributeName="opacity" dur="{LOOP}s" repeatCount="indefinite" '
+            f'values="0;0;0.75;0.35;0.6;0.6" '
+            f'keyTimes="0;{kt(t_tip):.4f};{kt(t_tip+FADE):.4f};'
+            f'{kt(t_tip+FADE+2.5):.4f};{kt(t_tip+FADE+5.0):.4f};1"/>'
+        )
+        p.append('</circle>')
 
+    # --- the die at the centre: always on, powers up first ---
     p.append(f'<circle cx="{CX}" cy="{CY}" r="10" fill="#0d1117" stroke="#58a6ff" stroke-width="2"/>')
-    p.append(f'<circle cx="{CX}" cy="{CY}" r="4" fill="#58a6ff"/>')
+    p.append(f'<circle cx="{CX}" cy="{CY}" r="4" fill="#58a6ff">')
+    p.append(f'  <animate attributeName="r" dur="{LOOP}s" repeatCount="indefinite" '
+             f'values="4;6.5;4;4" keyTimes="0;{kt(0.35):.4f};{kt(1.1):.4f};1"/>')
+    p.append('</circle>')
 
+    # --- packet dots: unchanged idea, but held back until the board is lit ---
     random.shuffle(lines)
     sample = lines[:7]
     colors_cycle = ["#7ee787", "#f2cc60", "#79c0ff"]
     for i, (x1, y1, x2, y2, d) in enumerate(sample):
         col = colors_cycle[i % len(colors_cycle)]
         dur = round(random.uniform(2.2, 4.0), 2)
-        begin = round(random.uniform(0, 2.5), 2)
-        p.append(f'<circle r="2.4" fill="{col}"><animateMotion dur="{dur}s" begin="{begin}s" repeatCount="indefinite" path="M{x1:.1f},{y1:.1f} L{x2:.1f},{y2:.1f}"/></circle>')
+        begin = round(sweep_end + random.uniform(0, 2.5), 2)
+        p.append(f'<circle r="2.4" fill="{col}" opacity="0">')
+        p.append(f'  <animateMotion dur="{dur}s" begin="{begin}s" repeatCount="indefinite" '
+                 f'path="M{x1:.1f},{y1:.1f} L{x2:.1f},{y2:.1f}"/>')
+        p.append(f'  <set attributeName="opacity" to="1" begin="{begin}s"/>')
+        p.append('</circle>')
 
-    p.append(f'<text x="{W-14}" y="{H-14}" text-anchor="end" font-size="9" fill="#484f58" letter-spacing="1">// circuit_bloom.py — seed:{seed} — spokes:{n_spokes} — regenerated daily</text>')
+    p.append(f'<text x="{W-14}" y="{H-14}" text-anchor="end" font-size="9" fill="#484f58" letter-spacing="1">'
+             f'// circuit_bloom.py — seed:{seed} — spokes:{n_spokes} — regenerated daily</text>')
     p.append('</svg>')
     return "\n".join(p)
 
+
 if __name__ == "__main__":
-    if len(sys.argv) > 1:
-        seed = sys.argv[1]
-    else:
-        seed = datetime.date.today().strftime("%Y%m%d")
-    svg = make_svg(seed)
-    with open("assets/circuit-bloom.svg", "w") as f:
-        f.write(svg)
-    print(f"generated assets/circuit-bloom.svg with seed {seed}")
+    seed = sys.argv[1] if len(sys.argv) > 1 else datetime.date.today().strftime("%Y%m%d")
+    out = sys.argv[2] if len(sys.argv) > 2 else "assets/circuit-bloom.svg"
+    with open(out, "w") as f:
+        f.write(make_svg(seed))
+    print(f"generated {out} with seed {seed}")
