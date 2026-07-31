@@ -7,7 +7,7 @@
 ### Embedded Systems Engineer · FPGA/SoC Development · Hardware Security & Applied ML
 📍 Chemnitz, Germany &nbsp;|&nbsp; 🎓 M.Sc. Design & Test for Integrated Circuits @ TU Chemnitz
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-urvishkosta-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/urvishkosta)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-urvish--kosta-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/urvish-kosta)
 [![Email](https://img.shields.io/badge/Email-kostaurvish%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:kostaurvish@gmail.com)
 
 </div>
@@ -138,9 +138,9 @@
 
 <br/><br/>
 
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=110x110&bgcolor=0d1117&color=58a6ff&data=https://linkedin.com/in/urvishkosta" alt="QR code linking to LinkedIn" width="90" />
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=110x110&bgcolor=0d1117&color=58a6ff&data=https://www.linkedin.com/in/urvish-kosta" alt="QR code linking to LinkedIn" width="90" />
 <br/>
-<sub>scan → linkedin.com/in/urvishkosta</sub>
+<sub>scan → linkedin.com/in/urvish-kosta</sub>
 
 <br/><br/>
 
