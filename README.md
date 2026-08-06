@@ -5,7 +5,7 @@
 <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&pause=1200&color=8B949E&center=true&vCenter=true&width=650&lines=embedded+systems+%2F%2F+fpga+%2F%2F+hardware+security+%2F%2F+applied+ml" alt="Typing SVG" />
 
 ### Embedded Systems Engineer · FPGA/SoC Development · Hardware Security & Applied ML
-📍 Chemnitz, Germany &nbsp;|&nbsp; 🎓 M.Sc. Design & Test for Integrated Circuits @ TU Chemnitz
+📍 Chemnitz, Germany &nbsp;|&nbsp; 🎓 Design & Test for Integrated Circuits @ TU Chemnitz
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-urvish--kosta-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/urvish-kosta)
 [![Email](https://img.shields.io/badge/Email-kostaurvish%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:kostaurvish@gmail.com)
