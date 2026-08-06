@@ -130,7 +130,7 @@
 ---
 
 ### 🌐 Languages
-🇩🇪 German (A1, actively improving) &nbsp;·&nbsp; 🇬🇧 English (B2–C1) &nbsp;·&nbsp; 🇮🇳 Hindi (Native)
+🇩🇪 German (A2, actively improving) &nbsp;·&nbsp; 🇬🇧 English (B2–C1) &nbsp;·&nbsp; 🇮🇳 Hindi (Native)
 
 <div align="center">
 
