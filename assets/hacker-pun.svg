@@ -2,5 +2,5 @@
 <rect x="0" y="0" width="900" height="70" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
 <rect x="0" y="0" width="5" height="70" rx="2" fill="#d29922"/>
 <text x="26" y="22" font-size="10" fill="#d29922" letter-spacing="2">PUN OF THE DAY</text>
-<text x="26" y="48" font-size="14" fill="#c9d1d9">I once tried to overclock my sleep schedule. Thermal throttled immediately.</text>
+<text x="26" y="48" font-size="14" fill="#c9d1d9">Some people count sheep. I count clock cycles.</text>
 </svg>
